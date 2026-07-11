@@ -5,11 +5,19 @@ public class ArmstrongNumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int n=343,sum=0,rem,num=n;
+		int n=1634,sum=0,rem,num=n;
+		int temp=n;
+		int count=0;
+		
+		//count digits
+		while(temp>0) {
+			count++;
+			temp/=10;
+		}
 		
 		while(n>0) {
 			rem=n%10;
-			sum=sum+(rem*rem*rem);
+			sum=sum+(int)Math.pow(rem, count);
 			n/=10;
 		}
 		
