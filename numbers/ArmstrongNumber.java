@@ -1,12 +1,18 @@
-package basics;
+package numbers;
+
+import java.util.Scanner;
 
 public class ArmstrongNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int n=1634,sum=0,rem,num=n;
-		int temp=n;
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		int sum=0,rem;
+		int temp=n,num=n;
 		int count=0;
 		
 		//count digits
@@ -26,6 +32,8 @@ public class ArmstrongNumber {
 		}else {
 			System.out.println("Not an Armstrong Number");
 		}
+		
+		sc.close();
 	}
 
 }

@@ -1,4 +1,4 @@
-package bitmanipulation;
+package numbers;
 
 public class BinaryToDecimal {
 
